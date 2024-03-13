@@ -17,10 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from .views import home, plant_param, plant_hija
+from aplicaciones.repuestos.views import repuestos
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home', home),
     path('pp', plant_param),
-    path('plant_hija', plant_hija)
+    path('plant_hija', plant_hija),
+    path('repuestos', repuestos)
 ]
